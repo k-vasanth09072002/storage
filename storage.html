@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>storage</title>
+</head>
+<body>
+
+
+    <input type="text" id="name">
+    <input type="password" id="password">
+
+    <button onclick="myFunction()" id="btn">storege</button>
+    <button onclick="myClick()" id="buttons">click me</button>
+    <button onclick="myFunctions()" id="btns">remove</button>
+    
+    <script>
+
+     
+     
+
+
+
+
+        function myFunction(){
+
+            let name=document.getElementById("name").value;
+        let  password=document.getElementById("password").value;
+
+        localStorage.setItem("name",name)
+        localStorage.setItem("password",password);
+
+        }
+
+
+        function myClick(){
+            let name=document.getElementById("name").value;
+        let  password=document.getElementById("password").value;
+
+        localStorage.getItem("name",name)
+        localStorage.getItem("password",password);
+            
+        }
+
+
+
+        function myFunctions(){
+
+
+            let name=document.getElementById("name").value;
+        let  password=document.getElementById("password").value;
+
+        localStorage.removeItem("name",name)
+        localStorage.removeItem("password",password);
+
+        }
+    </script>
+</body>
+</html>
